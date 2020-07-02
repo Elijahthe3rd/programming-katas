@@ -1,0 +1,150 @@
+
+body {
+    background-color: rgb(62, 77, 69);
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: deeppink;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container {
+    padding: 0.5rem 0.5rem;
+    min-height: 40vh;
+    width: 90vh ;
+    background-color: rgba(185, 198, 206, 0.747);  
+    display: flow-root; /* the default for div */
+    justify-content: center;
+    align-items: center;
+}
+#container2 {
+    padding: 0.5rem 0.5rem;
+    min-height: 40vh;
+    width: 90vh;
+    background-color: rgba(185, 198, 206, 0.747); 
+    display: flow-root; /* the default for div */
+    justify-content: center;
+    align-items: center;
+
+}
+
+div{
+    display: inline-flex; /* the default for div */
+    padding: 10px;
+    border: 1px solid rgb(155, 107, 10); 
+    margin-right: 30px;  
+    background-color:rgb(218, 172, 23);  
+    text-transform: capitalize;
+    font-size: 9px;
+    border: 2px double rgb(241, 210, 71);
+    border-radius: 10px;
+}
+    
+.btnTri{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: content-box;
+    background-color:rgb(97, 97, 99);
+}
+.btnRec{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    background-color:rgb(97, 97, 99);
+}
+.btnSqr{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    background-color:rgb(97, 97, 99);
+}
+
+ .btnName{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px double rgb(241, 241, 238); ;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: content-box;
+    background-color:rgb(97, 97, 99);
+ }
+
+.btnEO{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: content-box;
+    background-color:rgb(97, 97, 99);
+}
+.btnIso{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: 2px double whitesmoke;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: content-box;
+    background-color:rgb(97, 97, 99);
+ }
+
+.btnName:hover{
+    color: rgb(206, 104, 8);
+    background: rgb(42, 46, 42);
+    cursor: pointer;
+    outline: none;
+ }
+.btnEO:hover{
+    color: rgb(206, 104, 8);
+    background: rgb(42, 46, 42);
+    cursor: pointer;
+    outline: none;
+}
+
+ .btnIso:hover{
+    color: rgb(206, 104, 8);
+    background: rgb(42, 46, 42);
+    cursor: pointer;
+    outline: none;
+ }
+
+.btnTri:hover{
+    color: rgb(206, 104, 8);
+    background: rgb(42, 46, 42);;
+    cursor: pointer;
+    outline: none;
+}
+.demo:focus{
+    background: black;
+    color: greenyellow;
+}
+.btnSqr:hover{
+    color: rgb(206, 104, 8);
+    background: rgb(42, 46, 42);
+    cursor: pointer;
+    outline: none;
+}
+
+.btnRec:hover{
+    color: rgb(206, 104, 8);
+    background: rgb(42, 46, 42);
+    cursor: pointer;
+    outline: none;
+}
