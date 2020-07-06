@@ -4,7 +4,7 @@ function pyra(){
     
                for (let k = 1; k <= (rows-i); k++) {
                 document.write("&nbsp;");
-                
+        
                }
     
                for (let j = 1; j<=i;j++ ) {

@@ -21,7 +21,7 @@ function oddEven(){
         x.innerText=`\nERROR: Input field Empty`
         
     }else{
-    if(typeof numberInput=="string"){
+    if(typeof numberInput==!"string"){
         x.innerText=`\nERROR-Provided: ${numberInput} Not a Number\n\n Please Provide a Number`
     }else{
         if((parseInt(numberInput) % 2) == 0){
