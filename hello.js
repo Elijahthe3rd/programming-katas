@@ -9,34 +9,34 @@ function sayHello(){
     let userName=document.getElementById("name").value
 
     let x=document.getElementById("demoName")
-
-   
+    
     if(userName.length==0){
         console.log(new Error("empty input"));
         x.innerText=`\nERROR: Input field Empty` 
     }
-    else if(typeof userName == "string")
-    {
-        x.innerText=`\nERROR: ${userName} \n\n Please Provide a String Value`
-    }
-    else 
-    {
-        setName(userName)
+
+
+    if(typeof userName !="string" || userName.length==0){
+        x.innerHTML=`\n\nError:<br>Input failure!!!${userName} <br><br>${userName.length} input found`
+    }else{
+            setName(userName)
         x.innerText=getName()
     }
 }
 
 //set obj person name
 let setName=(namestr)=>{
+    let x=document.getElementById("demoName")
+
     if(typeof namestr =='string'){
         person.firstName = namestr
         setId()
+    }else
+    {
+        x.innerText=`\nERROR: ${namestr} Please Provide a valid Value`
+        throw new Error(`\nERROR: ${namestr} \n\n Please Provide a valid Value`)
     }
-    else{
-        console.log(new Error("Error occured"));
-        document.getElementById('demoName').innerText=`\nERROR: Input field Empty`
-        
-    }
+    
 }
 //method for auto incrementing the object id
 let setId=()=>{     
