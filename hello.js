@@ -10,18 +10,33 @@ function sayHello(){
 
     let x=document.getElementById("demoName")
 
-    setName(userName)
-    
-    console.log(`\nhello:\n\n| ID\t| Name\t\n| ${person.id}\t\t| ${person.firstName}  \n`)
-    // document.write(`\nhello:${getName()}\n`)
-    x.innerText=getName()
-
+   
+    if(userName.length==0){
+        console.log(new Error("empty input"));
+        x.innerText=`\nERROR: Input field Empty` 
+    }
+    else if(typeof userName == "string")
+    {
+        x.innerText=`\nERROR: ${userName} \n\n Please Provide a String Value`
+    }
+    else 
+    {
+        setName(userName)
+        x.innerText=getName()
+    }
 }
 
 //set obj person name
 let setName=(namestr)=>{
-    person.firstName = namestr
-    setId()
+    if(typeof namestr =='string'){
+        person.firstName = namestr
+        setId()
+    }
+    else{
+        console.log(new Error("Error occured"));
+        document.getElementById('demoName').innerText=`\nERROR: Input field Empty`
+        
+    }
 }
 //method for auto incrementing the object id
 let setId=()=>{     
@@ -30,6 +45,6 @@ let setId=()=>{
 }
 
 let getName=()=>{
-    return (`\nhello:\n\n| ID\t\t| Name\t\n| ${person.id}\t\t | ${person.firstName}  \n`)
+    return (`\nhello: ${person.firstName}  \n`)  
 }
 
