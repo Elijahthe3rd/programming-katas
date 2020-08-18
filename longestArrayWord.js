@@ -1,21 +1,47 @@
-let longestArrayString=()=>{
-// let longest=["the","quick","brown", "fox", "ate", "my", "chickens"]
-let longest=["them","herm","down", "fox", "rate"]
+// let longest = ["the", "quick", "brown", "fox", "ate", "my", "chickens"]
+// const longest=["them","herm","down", "fox", "rate"]
 
-let wordLength=0;
-let longWord=longest[0]
-let multiWords=[]
-let ii=0
-for (let index = 1; index < longest.length; index++) {
+const longestArrayString = () => {
+    let userInput=document.getElementById("arrays").value
+   
+    let output=document.getElementById("output")
+    let longest
+    let arrays = userInput.split(" ")
     
-    if(longWord.length < longest[index].length ) longWord=longest[index]
+
+    let multiWords = []
+    let ii = 0
+    let longWord = arrays[ii]
+
+    for (let index = 0; index < arrays.length; index++) {
+        if (longWord.length <= arrays[index].length) {
+            longWord = arrays[index]
+        }
+        if (longWord.length == arrays[index].length) {
+            multiWords.push(arrays[index])
+        }
+    }
     
-    else if( longest[ii] == longest[ii+1].length)  multiWords.push(longest[index])
+    let len = multiWords.length-1
 
-
+    if(multiWords[ii].length == multiWords[len--].length)
+    {
+        console.log(multiWords[len--])
+        output.innerHTML=multiWords
+    }else{
+        console.log(longWord);
+        output.innerHTML=longWord
+    }
+    // for (let index2 = 0; index2 < multiWords.length; index2++) {
+    //     if(multiWords[index2].length == multiWords[index2].length)
+    //     {
+    //         console.log(multiWords[index2], ' multiWords[index2]')
+    //         output.innerHTML=multiWords[index2]
+    //     }else{
+    //      console.log(longWord);
+    //      output.innerHTML=longWord
+    //     }
+    // }
 }
 
-console.log(longWord)
-console.log(multiWords.values().next())
-}
-longestArrayString()
+module.exports=longestArrayString()

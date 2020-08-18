@@ -2,8 +2,7 @@
 
 function oddEven(){
     let numberInput=document.getElementById('E_or_O').value
-    let x=document.getElementById('demoEO')
-    
+    let x=document.getElementById('demoEO') 
 
     // if(typeof parseInt(numberInput) != "number"){
     //     // document.write(`!!! ${numberInput} is invalid, Please enter valid input !!!`)
@@ -14,8 +13,8 @@ function oddEven(){
     //     // document.write(`${numberInput} must be greater than Zero`)
     //     x.innerText = (`${numberInput} must be greater than Zero`)
     
-
     // }
+    
     if(numberInput.length==0){
         console.log(new Error("empty input"));
         x.innerText=`\nERROR: Input field Empty`

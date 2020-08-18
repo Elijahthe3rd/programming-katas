@@ -1,0 +1,10 @@
+## INSTRUCTIONS ON HOW TO RUN THE APPLICATION
+
+1. TOOLS USED ARE AS FOLLOWS
+> * HTML5
+> * Vanilla-JS
+> * 
+> *
+> *
+> *
+> *
